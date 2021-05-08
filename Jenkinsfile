@@ -1,7 +1,7 @@
 pipeline {	 
 	agent any	
 	tools {
-		maven 'mav'
+		maven 'mavenhome'
 		}
     	stages {     	 
     	stage("Compile") {          	 
