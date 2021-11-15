@@ -1,17 +1,18 @@
 pipeline {	 
 	agent any	
 	tools {
-		maven 'mavenhome'
+		maven 'maven3'
 		}
     	stages {     	 
     	stage("Compile") {          	 
             	steps {               	 
-                	sh "mvn compile"          	 
+                	bat 'mvn --version'
+			bat "mvn compile"          	 
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
         	steps {               	 
-                	sh "mvn test"          	 
+                	bat "mvn test"          	 
             	}     	 
         	}	 
     	}
