@@ -7,12 +7,14 @@ pipeline {
     	stage("Compile") {          	 
             	steps {               	 
                 	bat 'mvn --version'
+			echo "Hello Team!"
 			bat "mvn compile"          	 
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
         	steps {               	 
-                	bat "mvn test"          	 
+                	bat "mvn test"
+			
             	}     	 
         	}	 
     	}
