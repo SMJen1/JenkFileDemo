@@ -7,7 +7,7 @@ pipeline {
     	stage("Compile") {          	 
             	steps {               	 
                 	bat 'mvn --version'
-			echo "Hello Team A Yactraq!"
+			echo "Hello ****** A Yactraq!"
 			bat "mvn compile"          	 
             	}     	 
         	}     	 
